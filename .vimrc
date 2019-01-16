@@ -7,17 +7,12 @@ filetype indent on                   " load filetype-specific indent files
 
 " UI config
 set number relativenumber            " show hybrid line nums
-hi LineNr ctermfg=144
 set showcmd                          " show command in bottom bar
 syntax on                            " syntax highlighting
 set timeoutlen=250 ttimeoutlen=10   " mapping timeout = 150ms, keycode timeout = 10ms        
 
 " Current line highlight
 set cursorline                       " highlight current line
-hi CursorLine cterm=NONE ctermbg=187 " no underline, gray bg
-hi CursorLineNr cterm=NONE ctermbg=104 ctermfg=230
-autocmd InsertEnter * highlight CursorLine ctermbg=195
-autocmd InsertLeave * highlight CursorLine ctermbg=187
 
 " Searches
 set incsearch                        " search as characters as entered
@@ -36,3 +31,17 @@ inoremap { {}<left>
 " inoremap {<CR> {<CR>}<ESC>O     -> not sure what this does yet
 " inoremap {;<CR> {<CR>};<ESC>O   -> not sure what this does yet
 " imap <C-Return> <CR><CR><C-o>k<Tab>  
+
+" Colors
+
+" Line number
+hi LineNr ctermfg=144
+
+" Cursorline
+hi CursorLine cterm=NONE ctermbg=187 " no underline, gray bg
+hi CursorLineNr cterm=NONE ctermbg=104 ctermfg=230
+autocmd InsertEnter * highlight CursorLine ctermbg=195
+autocmd InsertLeave * highlight CursorLine ctermbg=187
+
+" Parentheses / brackets / quotes
+hi MatchParen ctermbg=10 ctermfg=230
