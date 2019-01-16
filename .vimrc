@@ -1,9 +1,36 @@
-" This is temp
-set number relativenumber
+" Spaces and tabs
+set shiftwidth=4                     " number of spaces for autoindent 
+set tabstop=4                        " tabstop is the number of spaces a tab counts
+set softtabstop=4                    " number of spaces inserted per tab
+set expandtab                        " turns tabs into spaces
+filetype indent on                   " load filetype-specific indent files
 
-set cursorline
-hi CursorLine cterm=NONE ctermbg=186
-autocmd InsertEnter * highlight CursorLine ctermbg=195
-autocmd InsertLeave * highlight CursorLine ctermbg=186
+" UI config
+set number relativenumber            " show hybrid line nums
+set showcmd                          " show command in bottom bar
+syntax on                            " syntax highlighting
+set timeoutlen=250 ttimeoutlen=10   " mapping timeout = 150ms, keycode timeout = 10ms        
 
-hi CursorLineNr cterm=NONE ctermbg=104 ctermfg=white
+" Current line highlight
+set cursorline                       " highlight current line
+hi CursorLine cterm=NONE ctermbg=238 " no underline, gray bg
+autocmd InsertEnter * highlight CursorLine ctermbg=24
+autocmd InsertLeave * highlight CursorLine ctermbg=238
+
+" Searches
+set incsearch                        " search as characters as entered
+set hlsearch                         " highlight matches
+
+" Key mapping
+" remap <ESC> to get right of highlights
+nnoremap <silent> <ESC><ESC> <ESC>:nohlsearch<CR><ESC>
+
+" Autoclose quotes and brackets
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+" inoremap {<CR> {<CR>}<ESC>O     -> not sure what this does yet
+" inoremap {;<CR> {<CR>};<ESC>O   -> not sure what this does yet
+" imap <C-Return> <CR><CR><C-o>k<Tab>  
