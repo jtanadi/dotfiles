@@ -24,7 +24,6 @@ nnoremap <silent> <ESC><ESC> <ESC>:nohlsearch<CR><ESC>
 
 " Autoclose quotes and brackets
 inoremap " ""<left>
-inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
