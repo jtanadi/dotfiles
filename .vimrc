@@ -54,14 +54,14 @@ inoremap { {}<left>
 " Dark colors
 
 " Line number
-hi LineNr ctermbg=16 ctermfg=46
+"hi LineNr ctermbg=0 ctermfg=10
 
 " Cursorline dark
 hi CursorLine cterm=NONE ctermbg=234 " no underline, gray bg
-hi CursorLineNr cterm=NONE ctermbg=46 ctermfg=16
+hi CursorLineNr cterm=NONE ctermbg=46 ctermfg=0
 autocmd InsertEnter * highlight CursorLine ctermbg=236
 autocmd InsertLeave * highlight CursorLine ctermbg=234
 
 " Parentheses / brackets / quotes
-hi MatchParen ctermbg=16 ctermfg=46
+hi MatchParen ctermbg=0 ctermfg=46
 
