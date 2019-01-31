@@ -31,17 +31,37 @@ inoremap { {}<left>
 " inoremap {;<CR> {<CR>};<ESC>O   -> not sure what this does yet
 " imap <C-Return> <CR><CR><C-o>k<Tab>  
 
-" Colors
+
+""""""""""""""""""""
+"      COLORS      "
+""""""""""""""""""""
+
+" ACME colors
 
 " Line number
-hi LineNr ctermfg=144
+" hi LineNr ctermfg=144
 
-" Cursorline
-hi CursorLine cterm=NONE ctermbg=187 " no underline, gray bg
-hi CursorLineNr cterm=NONE ctermbg=104 ctermfg=230
-autocmd InsertEnter * highlight CursorLine ctermbg=195
-autocmd InsertLeave * highlight CursorLine ctermbg=187
+" Cursorline 
+" hi CursorLine cterm=NONE ctermbg=187 " no underline, gray bg
+" hi CursorLineNr cterm=NONE ctermbg=104 ctermfg=230
+" autocmd InsertEnter * highlight CursorLine ctermbg=195
+" autocmd InsertLeave * highlight CursorLine ctermbg=187
 
 " Parentheses / brackets / quotes
-hi MatchParen ctermbg=10 ctermfg=230
+" hi MatchParen ctermbg=10 ctermfg=230
+
+
+" Dark colors
+
+" Line number
+hi LineNr ctermbg=16 ctermfg=46
+
+" Cursorline dark
+hi CursorLine cterm=NONE ctermbg=234 " no underline, gray bg
+hi CursorLineNr cterm=NONE ctermbg=46 ctermfg=16
+autocmd InsertEnter * highlight CursorLine ctermbg=236
+autocmd InsertLeave * highlight CursorLine ctermbg=234
+
+" Parentheses / brackets / quotes
+hi MatchParen ctermbg=16 ctermfg=46
 
