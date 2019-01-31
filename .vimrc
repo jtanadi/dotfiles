@@ -9,7 +9,7 @@ filetype indent on                   " load filetype-specific indent files
 set number relativenumber            " show hybrid line nums
 set showcmd                          " show command in bottom bar
 syntax on                            " syntax highlighting
-set timeoutlen=250 ttimeoutlen=10   " mapping timeout = 150ms, keycode timeout = 10ms        
+set timeoutlen=450 ttimeoutlen=10   " mapping timeout = 450ms, keycode timeout = 10ms
 
 " Current line highlight
 set cursorline                       " highlight current line
@@ -44,3 +44,4 @@ autocmd InsertLeave * highlight CursorLine ctermbg=187
 
 " Parentheses / brackets / quotes
 hi MatchParen ctermbg=10 ctermfg=230
+
