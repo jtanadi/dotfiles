@@ -204,13 +204,13 @@ bar {
     position top
     separator_symbol " "
     colors {
-         background #e5e5e5
+         background #e7e7ea
          statusline #000000
 #                           border  background text
-         focused_workspace  #000000 #000000    #e5e5e5
-         active_workspace   #e5e5e5 #e5e5e5    #000000
-         inactive_workspace #e5e5e5 #e5e5e5    #000000
-         urgent_workspace   #e5e5e5 #e5e5e5    #cd0000
+         focused_workspace  #000000 #000000    #e7e7ea
+         active_workspace   #000000 #000000    #e7e7ea
+         inactive_workspace #e7e7ea #e7e7ea    #000000
+         urgent_workspace   #e7e7ea #e7e7ea    #cd0000
 	}
 }
 
@@ -224,10 +224,10 @@ exec --no-startup-id mailspring
 
 # Window Colours
 #                         border  background text    indicator  child-border
-  client.focused          #e5e5e5 #e5e5e5    $000000 #e5e5e5    #e5e5e5 
-  client.focused_inactive $base01 $base02    $base03 #000000    #000000 
-  client.unfocused        $base01 $base02    $base03 #000000    #000000 
-  client.urgent           $base07 $base08    $base00 $base0F    $base08
+  client.focused          #e7e7ea #e7e7ea    $000000 #e7e7ea    #e7e7ea 
+  client.focused_inactive $base01 $base02    $base03 #e7e7ea    #7f7f7f 
+  client.unfocused        $base01 $base02    $base03 #e7e7ea    #7f7f7f 
+  client.urgent           $base07 $base08    $base00 $base0F    #e7e7ea
 
 # set default border
 default_border pixel 2
