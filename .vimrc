@@ -19,8 +19,12 @@ set incsearch                        " search as characters as entered
 set hlsearch                         " highlight matches
 
 " Key mapping
-" remap <ESC> to get right of highlights
+" remap <ESC> to get rid of highlights
 nnoremap <silent> <ESC><ESC> <ESC>:nohlsearch<CR><ESC>
+
+" Map spacebar to toggle folding
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+vnoremap <Space> zf
 
 " Autoclose quotes and brackets
 inoremap " ""<left>
@@ -31,6 +35,12 @@ inoremap { {}<left>
 " inoremap {;<CR> {<CR>};<ESC>O   -> not sure what this does yet
 " imap <C-Return> <CR><CR><C-o>k<Tab>  
 
+" Folding
+set foldmethod=syntax
+set foldcolumn=1
+let javaScript_fold=1
+set foldnestmax=9
+set foldlevelstart=99
 
 """"""""""""""""""""
 "      COLORS      "
@@ -54,13 +64,17 @@ inoremap { {}<left>
 " Dark colors
 
 " Line number
-"hi LineNr ctermbg=0 ctermfg=10
+hi LineNr ctermbg=0 ctermfg=3
 
-" Cursorline dark
+" Cursorline
 hi CursorLine cterm=NONE ctermbg=234 " no underline, gray bg
 hi CursorLineNr cterm=NONE ctermbg=46 ctermfg=0
 autocmd InsertEnter * highlight CursorLine ctermbg=236
 autocmd InsertLeave * highlight CursorLine ctermbg=234
+
+" Folding
+hi Folded ctermbg=234 ctermfg=6
+hi FoldColumn ctermbg=234 ctermfg=6
 
 " Parentheses / brackets / quotes
 hi MatchParen ctermbg=0 ctermfg=46
