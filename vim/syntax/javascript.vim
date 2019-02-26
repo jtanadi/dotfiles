@@ -29,7 +29,6 @@ setlocal iskeyword+=$
 syntax sync fromstart
 
 "" JavaScript comments
-setlocal commentstring=//\ %s
 syntax keyword javaScriptCommentTodo    TODO FIXME XXX TBD contained
 syntax region  javaScriptLineComment    start=+\/\/+ end=+$+ keepend contains=javaScriptCommentTodo,@Spell
 syntax region  javaScriptLineComment    start=+^\s*\/\/+ skip=+\n\s*\/\/+ end=+$+ keepend contains=javaScriptCommentTodo,@Spell fold
