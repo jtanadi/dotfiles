@@ -5,6 +5,12 @@ set softtabstop=4                    " number of spaces inserted per tab
 set expandtab                        " turns tabs into spaces
 filetype indent on                   " load filetype-specific indent files
 
+" Commenting overrides
+autocmd FileType c setlocal commentstring=//\ %s
+autocmd FileType python setlocal commentstring=# %s
+autocmd FileType html setlocal commentstring=<!--\ %s\ -->
+autocmd FileType javascript setlocal commentstring=//\ %s
+
 " UI config
 set number relativenumber            " show hybrid line nums
 set showcmd                          " show command in bottom bar
