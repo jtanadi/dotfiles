@@ -40,8 +40,8 @@ inoremap " ""<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
-" inoremap {<CR> {<CR>}<ESC>O     -> not sure what this does yet
-" inoremap {;<CR> {<CR>};<ESC>O   -> not sure what this does yet
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
 " imap <C-Return> <CR><CR><C-o>k<Tab>  
 
 " Folding
@@ -50,6 +50,15 @@ set foldcolumn=1
 set foldnestmax=9
 set foldlevelstart=99
 let javaScript_fold=1
+
+" NERDtree
+map <C-n> :NERDTreeToggle<CR>
+
+" Split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 """"""""""""""""""""
 "      COLORS      "
