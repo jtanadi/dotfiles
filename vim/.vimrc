@@ -52,7 +52,7 @@ set foldlevelstart=99
 let javaScript_fold=1
 
 " NERDtree
-map <C-n> :NERDTreeToggle<CR>
+noremap <C-n> :NERDTreeToggle<CR>
 
 " Split navigations
 nnoremap <C-J> <C-W><C-J>
