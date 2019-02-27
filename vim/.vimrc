@@ -1,13 +1,16 @@
+" Start pathogen package manager
+execute pathogen#infect()
+
 " Spaces and tabs
 set shiftwidth=4                     " number of spaces for autoindent 
 set tabstop=4                        " tabstop is the number of spaces a tab counts
 set softtabstop=4                    " number of spaces inserted per tab
 set expandtab                        " turns tabs into spaces
-filetype indent on                   " load filetype-specific indent files
+filetype plugin indent on            " load filetype-specific indent files
 
 " Commenting overrides
 autocmd FileType c setlocal commentstring=//\ %s
-autocmd FileType python setlocal commentstring=# %s
+autocmd FileType python setlocal commentstring=#\ %s
 autocmd FileType html setlocal commentstring=<!--\ %s\ -->
 autocmd FileType javascript setlocal commentstring=//\ %s
 
@@ -44,9 +47,9 @@ inoremap { {}<left>
 " Folding
 set foldmethod=syntax
 set foldcolumn=1
-let javaScript_fold=1
 set foldnestmax=9
 set foldlevelstart=99
+let javaScript_fold=1
 
 """"""""""""""""""""
 "      COLORS      "
