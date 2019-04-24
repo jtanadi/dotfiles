@@ -46,6 +46,11 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
+# Screenshots
+bindsym --release Print exec "scrot '/home/jtanadi/Screenshots/%Y-%m-%d-%T.png'"
+bindsym --release $mod+Print exec "scrot -s '/home/jtanadi/Screenshots/%Y-%m-%d-%T.png'"
+bindsym --release $mod+Shift+Print exec "scrot -ub '/home/jtanadi/Screenshots/%Y-%m-%d-%T.png'"
+
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
@@ -165,7 +170,7 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 
 # open apps in specific workspaces
 assign [Class="Google-chrome"] $workspace2
-assign [Class="Sylpheed"] $workspace10
+assign [Class="Mailspring"] $workspace10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -224,7 +229,7 @@ exec_always xrandr --display :0 --output eDP-1 --mode 1600x900
 # exec programs during startup
 exec --no-startup-id i3-sensible-terminal
 exec --no-startup-id google-chrome
-exec --no-startup-id sylpheed 
+exec --no-startup-id mailspring 
 
 # Window Colours
 #                         border  background text    indicator  child-border
