@@ -1,12 +1,16 @@
 " Start pathogen package manager
 execute pathogen#infect()
 
+" Set backspace to work like other programs
+set backspace=indent,eol,start
+
 " Spaces and tabs
 set shiftwidth=4                     " number of spaces for autoindent 
 set tabstop=4                        " tabstop is the number of spaces a tab counts
 set softtabstop=4                    " number of spaces inserted per tab
 set expandtab                        " turns tabs into spaces
 filetype plugin indent on            " load filetype-specific indent files
+set linebreak                        " don't break in the middle of words
 
 " Commenting overrides
 autocmd FileType c setlocal commentstring=//\ %s
@@ -63,24 +67,6 @@ nnoremap <C-H> <C-W><C-H>
 """"""""""""""""""""
 "      COLORS      "
 """"""""""""""""""""
-
-" ACME colors
-
-" Line number
-" hi LineNr ctermfg=144
-
-" Cursorline 
-" hi CursorLine cterm=NONE ctermbg=187 " no underline, gray bg
-" hi CursorLineNr cterm=NONE ctermbg=104 ctermfg=230
-" autocmd InsertEnter * highlight CursorLine ctermbg=195
-" autocmd InsertLeave * highlight CursorLine ctermbg=187
-
-" Parentheses / brackets / quotes
-" hi MatchParen ctermbg=10 ctermfg=230
-
-
-" Dark colors
-
 " Line number
 hi LineNr ctermbg=0 ctermfg=3
 
@@ -97,3 +83,14 @@ hi FoldColumn ctermbg=234 ctermfg=6
 " Parentheses / brackets / quotes
 hi MatchParen ctermbg=0 ctermfg=46
 
+" ALE
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+let g:ale_set_highlights = 0
+let g:ale_sign_column_always = 1
+let g:ale_change_sign_column_color = 1
+
+highlight ALESignColumnWithErrors ctermbg=52
+highlight ALESignColumnWithoutErrors ctermbg=black
+highlight ALEErrorSign ctermbg=NONE ctermfg=red
+highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
