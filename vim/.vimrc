@@ -5,7 +5,7 @@ execute pathogen#infect()
 set backspace=indent,eol,start
 
 " Spaces and tabs
-set shiftwidth=4                     " number of spaces for autoindent 
+set shiftwidth=4                     " number of spaces for autoindent
 set tabstop=4                        " tabstop is the number of spaces a tab counts
 set softtabstop=4                    " number of spaces inserted per tab
 set expandtab                        " turns tabs into spaces
@@ -46,7 +46,7 @@ inoremap [ []<left>
 inoremap { {}<left>
 " inoremap {<CR> {<CR>}<ESC>O
 " inoremap {;<CR> {<CR>};<ESC>O
-" imap <C-Return> <CR><CR><C-o>k<Tab>  
+" imap <C-Return> <CR><CR><C-o>k<Tab>
 
 " Folding
 set foldmethod=syntax
@@ -83,15 +83,21 @@ hi FoldColumn ctermbg=234 ctermfg=6
 " Parentheses / brackets / quotes
 hi MatchParen ctermbg=0 ctermfg=46
 
-" ALE
+" ALE Linting
 let g:ale_sign_error = '✘'
 let g:ale_sign_warning = '⚠'
 let g:ale_set_highlights = 0
 let g:ale_sign_column_always = 1
 let g:ale_change_sign_column_color = 1
-let g:ale_fix_on_save = 1
 
 highlight ALESignColumnWithErrors ctermbg=52
 highlight ALESignColumnWithoutErrors ctermbg=black
 highlight ALEErrorSign ctermbg=NONE ctermfg=red
 highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+
+" ALE Fixing
+let g:ale_fix_on_save = 1
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['eslint'],
+\}
