@@ -1,3 +1,6 @@
+""""""""""""""""""""
+"      BASICS      "
+""""""""""""""""""""
 " Start pathogen package manager
 execute pathogen#infect()
 
@@ -83,6 +86,9 @@ hi FoldColumn ctermbg=234 ctermfg=6
 " Parentheses / brackets / quotes
 hi MatchParen ctermbg=0 ctermfg=46
 
+"""""""""""""""""""""
+"      LINTING      "
+"""""""""""""""""""""
 " ALE Linting
 let g:ale_sign_error = '✘'
 let g:ale_sign_warning = '⚠'
@@ -98,6 +104,6 @@ highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 " ALE Fixing
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   '*': ['trim_whitespace'],
 \   'javascript': ['eslint'],
 \}
