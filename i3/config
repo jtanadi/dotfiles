@@ -47,9 +47,12 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Screenshots
-bindsym --release Print exec "scrot '/home/jtanadi/Screenshots/%Y-%m-%d-%T.png'"
-bindsym --release $mod+Print exec "scrot -s '/home/jtanadi/Screenshots/%Y-%m-%d-%T.png'"
-bindsym --release $mod+Shift+Print exec "scrot -ub '/home/jtanadi/Screenshots/%Y-%m-%d-%T.png'"
+# bindsym --release Print exec "scrot '/home/jtanadi/Screenshots/%Y-%m-%d-%T.png'"
+# bindsym --release $mod+Print exec "scrot -s '/home/jtanadi/Screenshots/%Y-%m-%d-%T.png'"
+# bindsym --release $mod+Shift+Print exec "scrot -ub '/home/jtanadi/Screenshots/%Y-%m-%d-%T.png'"
+bindsym --release Mod1+Shift+3 exec "scrot '/home/jtanadi/Screenshots/%Y-%m-%d-%T.png'"
+bindsym --release Mod1+Shift+4 exec "scrot -s '/home/jtanadi/Screenshots/%Y-%m-%d-%T.png'"
+bindsym --release Mod1+Shift+2 exec "scrot -ub '/home/jtanadi/Screenshots/%Y-%m-%d-%T.png'"
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
