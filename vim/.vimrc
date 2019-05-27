@@ -104,6 +104,9 @@ highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 " ALE Fixing
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
-\   '*': ['trim_whitespace'],
-\   'javascript': ['eslint'],
+\   'html': ['trim_whitespace'],
+\   'css': ['trim_whitespace'],
+\   'javascript': ['eslint', 'prettier', 'trim_whitespace'],
+\   'python': ['trim_whitespace'],
+\   'c': ['trim_whitespace'],
 \}
