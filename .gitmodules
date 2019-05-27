@@ -16,3 +16,13 @@
 [submodule "vim/bundle/vim-markdown"]
 	path = vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "vim/pack/tpope/start/commentary"]
+    path = vim/pack/tpope/start/commentary
+    url = https://github.com/tpope/vim-commentary.git
+[submodule "vim/pack/tpope/start/surround"]
+    path = vim/pack/tpope/start/surround
+    url = https://github.com/tpope/vim-surround.git
+[submodule "vim/pack/tpope/start/repeat"]
+    path = vim/pack/tpope/start/repeat
+    url = git clone https://tpope.io/vim/repeat.git
+
