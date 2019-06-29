@@ -144,7 +144,7 @@ bindsym $mod+a focus parent
 
 # workspace variables
 set $workspace1 "1 "
-set $workspace2 "2 "
+set $workspace2 "2 "
 set $workspace10 "10 "
 
 # switch to workspace
@@ -172,7 +172,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 
 # open apps in specific workspaces
-assign [Class="Google-chrome"] $workspace2
+assign [Class="Firefox"] $workspace2
 assign [Class="Mailspring"] $workspace10
 
 # reload the configuration file
@@ -231,7 +231,7 @@ exec_always xrandr --display :0 --output eDP-1 --mode 1600x900
 
 # exec programs during startup
 exec --no-startup-id i3-sensible-terminal
-exec --no-startup-id google-chrome
+exec --no-startup-id firefox
 exec --no-startup-id mailspring 
 
 # Window Colours
