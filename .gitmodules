@@ -13,6 +13,9 @@
 [submodule "vim/bundle/vim-javascript"]
 	path = vim/bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
+[submodule "vim/bundle/vim-jsx-pretty"]
+	path = vim/bundle/vim-jsx-pretty
+	url = https://github.com/MaxMEllon/vim-jsx-pretty.git
 [submodule "vim/bundle/vim-markdown"]
 	path = vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
@@ -25,9 +28,9 @@
 [submodule "vim/pack/tpope/start/repeat"]
     path = vim/pack/tpope/start/repeat
     url = git clone https://tpope.io/vim/repeat.git
-[submodule "vim/bundle/vim-jsx-pretty"]
-	path = vim/bundle/vim-jsx-pretty
-	url = https://github.com/MaxMEllon/vim-jsx-pretty.git
 [submodule "vim/bundle/vim/bundle/VimCompletesMe"]
 	path = vim/bundle/vim/bundle/VimCompletesMe
 	url = https://github.com/vim-scripts/VimCompletesMe.git
+[submodule "vim/bundle/vim-jsx-pretty"]
+	path = vim/bundle/vim-jsx-pretty
+	url = https://github.com/MaxMEllon/vim-jsx-pretty.git
