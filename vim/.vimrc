@@ -1,6 +1,9 @@
 """"""""""""""""""""
 "      BASICS      "
 """"""""""""""""""""
+"for parcel
+set backupcopy=yes
+
 " Start pathogen package manager
 execute pathogen#infect()
 
@@ -106,7 +109,8 @@ let g:ale_fix_on_save = 1
 let g:ale_fixers = {
 \   'html': ['trim_whitespace'],
 \   'css': ['trim_whitespace'],
-\   'javascript': ['eslint', 'prettier', 'trim_whitespace'],
+\   'javascript': ['prettier', 'eslint', 'trim_whitespace'],
+\   'jsx': ['prettier', 'eslint', 'trim_whitespace'],
 \   'python': ['trim_whitespace'],
 \   'c': ['trim_whitespace'],
 \}
