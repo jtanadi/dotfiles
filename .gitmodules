@@ -25,7 +25,7 @@
 [submodule "vim/pack/tpope/start/repeat"]
     path = vim/pack/tpope/start/repeat
     url = git clone https://tpope.io/vim/repeat.git
-[submodule "vim/bundle/vim-markdown"]
+[submodule "vim/bundle/vim-jsx-pretty"]
 	path = vim/bundle/vim-jsx-pretty
 	url = https://github.com/MaxMEllon/vim-jsx-pretty.git
 [submodule "vim/bundle/vim/bundle/VimCompletesMe"]
