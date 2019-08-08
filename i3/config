@@ -134,10 +134,10 @@ bindsym $mod+a focus parent
 # bindsym $mod+minus scratchpad show
 
 # workspace variables
-set $workspace1 "1 "
-set $workspace2 "2 "
-set $workspace9 "9 "
-set $workspace10 "10 "
+set $workspace1 "1 💻"
+set $workspace2 "2 🦊"
+set $workspace9 "9 💬"
+set $workspace10 "10 📬"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -215,7 +215,7 @@ bar {
 #                           border  background text
          focused_workspace  #000000 #000000    #e7e7ea
          active_workspace   #000000 #000000    #e7e7ea
-         inactive_workspace #e7e7ea #e7e7ea    #000000
+         inactive_workspace #e7e7ea #e7e7ea    #000001
          urgent_workspace   #e7e7ea #e7e7ea    #cd0000
 	}
 }
