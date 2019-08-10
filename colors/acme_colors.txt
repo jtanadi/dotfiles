@@ -1,0 +1,28 @@
+ACME colors
+Consider using https://github.com/olivertaylor/vacme for everything
+because vim colors are limited
+
+terminal background:
+ffffea   cream
+
+terminal, l -> r:
+222222   black
+b85c57   red
+40883f   green
+989848   yellow
+0287c8   blue
+8888c8   purple
+4fa8a8   teal
+fafafa   gray
+
+i3 bar background
+d7ffff  pale turquoise (color 195)
+
+i3 dividers
+efefdf   light warm gray
+
+vim cursorline
+187   dirty yellow
+
+vim cursorline @ insert
+195   light blue

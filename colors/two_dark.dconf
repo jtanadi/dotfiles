@@ -1,0 +1,19 @@
+[/]
+foreground-color='rgb(206,212,224)'
+visible-name='Two Dark'
+palette=['rgb(30,33,39)', 'rgb(224,82,93)', 'rgb(113,173,69)', 'rgb(209,154,102)', 'rgb(97,175,239)', 'rgb(198,120,221)', 'rgb(107,181,190)', 'rgb(171,178,191)', 'rgb(38,43,52)', 'rgb(224,82,93)', 'rgb(113,184,61)', 'rgb(209,154,102)', 'rgb(97,175,239)', 'rgb(198,120,221)', 'rgb(86,182,194)', 'rgb(255,255,255)']
+bold-is-bright=true
+cursor-background-color='rgb(30,33,39)'
+cursor-colors-set=false
+highlight-colors-set=false
+cell-height-scale=1.0
+use-transparent-background=false
+use-theme-colors=false
+cursor-foreground-color='rgb(92,99,112)'
+use-theme-transparency=false
+bold-color-same-as-fg=false
+bold-color='rgb(233,236,243)'
+background-color='rgb(0,0,0)'
+scrollbar-policy='never'
+highlight-background-color='rgb(171,178,191)'
+highlight-foreground-color='rgb(30,33,39)'
