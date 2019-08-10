@@ -74,20 +74,20 @@ nnoremap <C-H> <C-W><C-H>
 "      COLORS      "
 """"""""""""""""""""
 " Line number
-hi LineNr ctermbg=16 ctermfg=3
+hi LineNr ctermbg=0 ctermfg=3
 
 " Cursorline
-hi CursorLine cterm=NONE ctermbg=0 " no underline, gray bg
-hi CursorLineNr cterm=NONE ctermbg=2 ctermfg=16
-autocmd InsertEnter * highlight CursorLine ctermbg=8
-autocmd InsertLeave * highlight CursorLine ctermbg=0
+hi CursorLine cterm=NONE ctermbg=234 " no underline, gray bg
+hi CursorLineNr cterm=NONE ctermbg=46 ctermfg=0
+autocmd InsertEnter * highlight CursorLine ctermbg=236
+autocmd InsertLeave * highlight CursorLine ctermbg=234
 
 " Folding
-hi Folded ctermbg=16 ctermfg=6
-hi FoldColumn ctermbg=16 ctermfg=6
+hi Folded ctermbg=234 ctermfg=6
+hi FoldColumn ctermbg=234 ctermfg=6
 
 " Parentheses / brackets / quotes
-hi MatchParen ctermbg=0 ctermfg=2
+hi MatchParen ctermbg=0 ctermfg=46
 
 """""""""""""""""""""
 "      LINTING      "
