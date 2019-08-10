@@ -87,10 +87,10 @@ hi Folded ctermbg=16 ctermfg=6
 hi FoldColumn ctermbg=16 ctermfg=6
 
 " Parentheses / brackets / quotes
-hi MatchParen ctermbg=0 ctermfg=2
+hi MatchParen ctermbg=0 ctermfg=4
 
 " ALE colors
-highlight ALESignColumnWithErrors ctermbg=52
+highlight ALESignColumnWithErrors ctermbg=217
 highlight ALESignColumnWithoutErrors ctermbg=16
 highlight ALEErrorSign ctermbg=NONE ctermfg=red
 highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
