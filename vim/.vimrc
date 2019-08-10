@@ -89,6 +89,12 @@ hi FoldColumn ctermbg=16 ctermfg=6
 " Parentheses / brackets / quotes
 hi MatchParen ctermbg=0 ctermfg=2
 
+" ALE colors
+highlight ALESignColumnWithErrors ctermbg=52
+highlight ALESignColumnWithoutErrors ctermbg=16
+highlight ALEErrorSign ctermbg=NONE ctermfg=red
+highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+
 """""""""""""""""""""
 "      LINTING      "
 """""""""""""""""""""
@@ -99,10 +105,6 @@ let g:ale_set_highlights = 0
 let g:ale_sign_column_always = 1
 let g:ale_change_sign_column_color = 1
 
-highlight ALESignColumnWithErrors ctermbg=52
-highlight ALESignColumnWithoutErrors ctermbg=black
-highlight ALEErrorSign ctermbg=NONE ctermfg=red
-highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 
 " ALE Fixing
 let g:ale_fix_on_save = 1
