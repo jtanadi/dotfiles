@@ -198,6 +198,11 @@ bar {
          urgent_workspace   #00000000 #00000000  #be0000
 	}
 }
+# Window colors
+# class             border    backgr. text indicator child_border
+client.focused      #00000000 #000000 #fff #000000   #00000000
+client.urgent       #00000000 #FFC0CB #fff #be0000   #00000000
+client.background   #000
 
 # exec programs during startup
 exec --no-startup-id i3-sensible-terminal
