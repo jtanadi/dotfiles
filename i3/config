@@ -209,4 +209,4 @@ exec --no-startup-id hsetroot -solid "#FFC0CB"
 # i3 gaps settings
 # set default border
 default_border pixel 0
-gaps inner 20
+gaps inner 25
