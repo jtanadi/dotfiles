@@ -193,7 +193,7 @@ bar {
          statusline #000000
 #                           border    background text
          focused_workspace  #00000000 #00000000  #000000
-         active_workspace   #00000000 #00000000  #e7e7ea
+         active_workspace   #00000000 #00000000  #997379
          inactive_workspace #00000000 #00000000  #997379
          urgent_workspace   #00000000 #00000000  #be0000
 	}
