@@ -46,6 +46,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 
+# start a browser (firefox)
+bindsym $mod+Shift+Return exec --no-startup-id firefox
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -141,8 +144,7 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 
-# open apps in specific workspaces
-assign [Class="Firefox"] $workspace2
+# bind apps to specific workspaces
 assign [Class="Slack"] $workspace9
 assign [Class="Mailspring"] $workspace10
 
@@ -191,11 +193,11 @@ bar {
     colors {
          background #00000000
          statusline #000000
-#                           border    background text
-         focused_workspace  #00000000 #00000000  #000000
-         active_workspace   #00000000 #00000000  #997379
-         inactive_workspace #00000000 #00000000  #997379
-         urgent_workspace   #00000000 #00000000  #be0000
+#                           border  background text
+         focused_workspace  #FFC0CB #00000000  #000000
+         active_workspace   #FFC0CB #00000000  #997379
+         inactive_workspace #FFC0CB #00000000  #997379
+         urgent_workspace   #FFC0CB #00000000  #be0000
 	}
 }
 # Window colors
@@ -205,10 +207,12 @@ client.urgent       #00000000 #FFC0CB #fff #be0000   #00000000
 client.background   #000
 
 # exec programs during startup
-exec --no-startup-id i3-sensible-terminal
-exec --no-startup-id firefox
+exec --no-startup-id i3-msg 'workspace $workspace1; append_layout ~/.config/i3/workspaces/workspace1.json; exec --no-startup-id i3-sensible-terminal'
+exec --no-startup-id i3-msg 'workspace $workspace2; append_layout ~/.config/i3/workspaces/workspace2.json; exec --no-startup-id firefox; workspace $workspace1'
 exec --no-startup-id mailspring 
-exec --no-startup-id "compton -b"
+
+# start compton & configure background color
+exec --no-startup-id "compton -b --experimental-backend"
 exec --no-startup-id hsetroot -solid "#FFC0CB"
 
 # i3 gaps settings
