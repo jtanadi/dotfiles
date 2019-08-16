@@ -212,7 +212,7 @@ exec --no-startup-id i3-msg 'workspace $workspace2; append_layout ~/.config/i3/w
 exec --no-startup-id mailspring 
 
 # start compton & configure background color
-exec --no-startup-id "compton -b --experimental-backend"
+exec --no-startup-id "compton -b"
 exec --no-startup-id hsetroot -solid "#FFC0CB"
 
 # i3 gaps settings
