@@ -4,7 +4,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # If you come from bash you might have to change your $PATH.
-  export PATH=$PATH:$HOME/bin:~/.local/bin:~/racket/bin
+  export PATH=$PATH:$HOME/bin:~/.local/bin
 
 # Path to your oh-my-zsh installation.
   export ZSH="/home/jtanadi/.oh-my-zsh"
