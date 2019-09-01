@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # Commands
 alias open="xdg-open"
 alias restartcompton="pkill compton; compton -b"
+alias postgres="service postgresql start"
 
 # Editing configs
 alias configi3="vim ~/.config/i3/config"
