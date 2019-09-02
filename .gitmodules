@@ -29,7 +29,7 @@
     path = vim/pack/tpope/start/repeat
     url = git clone https://tpope.io/vim/repeat.git
 [submodule "vim/bundle/vim/bundle/VimCompletesMe"]
-	path = vim/bundle/vim/bundle/VimCompletesMe
+	path = vim/bundle/VimCompletesMe
 	url = https://github.com/vim-scripts/VimCompletesMe.git
 [submodule "vim/bundle/vim-jsx-pretty"]
 	path = vim/bundle/vim-jsx-pretty
