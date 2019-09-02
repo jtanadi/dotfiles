@@ -185,25 +185,25 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
     tray_output none
-    i3bar_command i3bar --transparency
+    i3bar_command i3bar
     status_command i3blocks -c ~/.config/i3/i3blocks.conf
     font pango:Roboto Mono Medium 10.5
     position top
     separator_symbol " "
     colors {
-         background #00000000
-         statusline #000000
+         background #FFC0CB
+         statusline #000001
 #                           border  background text
-         focused_workspace  #FFC0CB #00000000  #000000
-         active_workspace   #FFC0CB #00000000  #997379
-         inactive_workspace #FFC0CB #00000000  #997379
-         urgent_workspace   #FFC0CB #00000000  #be0000
+         focused_workspace  #FFC0CB #FFC0CB  #000001
+         active_workspace   #FFC0CB #FFC0CB  #997379
+         inactive_workspace #FFC0CB #FFC0CB  #997379
+         urgent_workspace   #FFC0CB #FFC0CB  #be0000
 	}
 }
 # Window colors
-# class             border    backgr. text indicator child_border
-client.focused      #00000000 #000000 #fff #000000   #00000000
-client.urgent       #00000000 #FFC0CB #fff #be0000   #00000000
+# class             border  backgr. text indicator child_border
+client.focused      #000000 #000000 #fff #000000   #000000
+client.urgent       #000000 #FFC0CB #fff #be0000   #000000
 client.background   #000
 
 # exec programs during startup
