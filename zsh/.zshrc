@@ -100,8 +100,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Commands
 alias open="xdg-open"
+alias copy="xclip -selection clipboard"
 alias restartcompton="pkill compton; compton -b"
 alias postgres="service postgresql start"
+alias startSSH='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa'
 
 # Editing configs
 alias configi3="vim ~/.config/i3/config"
@@ -111,6 +113,7 @@ alias configvim="vim ~/.vimrc"
 alias configzsh="vim ~/.zshrc"
 
 # change dir aliases
+alias svsp="cd ~/Work/CSedu/0-FullStack\ Academy/2-Senior/1-grace-shopper"
 alias sandbox="cd ~/Work/sandbox"
 alias csEdu="cd ~/Work/CSedu/"
 alias cs50="cd ~/Work/CSedu/1-Core\ Programming/0-CS50/"
@@ -120,6 +123,7 @@ alias fullstack="cd ~/Work/CSedu/0-FullStack\ Academy/"
 alias fullstackNotes="cd ~/Work/CSedu/0-FullStack\ Academy/z-Notes"
 alias algorithms1="cd /home/jtanadi/Work/CSedu/3-Core\ Theory/1-Algorithms1"
 alias work="cd ~/Work/"
+alias cork="cd ~/Work/cork"
 alias raaIndd="cd ~/Work/raa/indd"
 alias raaPy="cd ~/Work/raa/py"
 alias dotfiles="cd ~/Work/dotfiles"
