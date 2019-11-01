@@ -7,6 +7,9 @@ set backupcopy=yes
 " Start pathogen package manager
 execute pathogen#infect()
 
+" Use mouse normally
+set mouse=a
+
 " Set backspace to work like other programs
 set backspace=indent,eol,start
 
