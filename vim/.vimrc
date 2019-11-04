@@ -80,21 +80,21 @@ nnoremap <C-H> <C-W><C-H>
 hi LineNr ctermbg=16 ctermfg=3
 
 " Cursorline
-hi CursorLine cterm=NONE ctermbg=0 " no underline, gray bg
+hi CursorLine cterm=NONE ctermbg=235 " no underline, gray bg
 hi CursorLineNr cterm=NONE ctermbg=2 ctermfg=16
-autocmd InsertEnter * highlight CursorLine ctermbg=8
-autocmd InsertLeave * highlight CursorLine ctermbg=0
+autocmd InsertEnter * highlight CursorLine ctermbg=237
+autocmd InsertLeave * highlight CursorLine ctermbg=235
 
 " Folding
 hi Folded ctermbg=16 ctermfg=6
 hi FoldColumn ctermbg=16 ctermfg=6
 
 " Parentheses / brackets / quotes
-hi MatchParen ctermbg=8 ctermfg=4
+hi MatchParen ctermbg=237 ctermfg=4
 
 " ALE colors
 highlight ALESignColumnWithErrors ctermbg=217
-highlight ALESignColumnWithoutErrors ctermbg=16
+highlight ALESignColumnWithoutErrors ctermbg=0
 highlight ALEErrorSign ctermbg=NONE ctermfg=red
 highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 
@@ -115,6 +115,7 @@ let g:ale_fixers = {
 \   'html': ['trim_whitespace'],
 \   'css': ['trim_whitespace'],
 \   'javascript': ['prettier', 'eslint', 'trim_whitespace'],
+\   'javascriptreact': ['prettier', 'eslint', 'trim_whitespace'],
 \   'jsx': ['prettier', 'eslint', 'trim_whitespace'],
 \   'python': ['trim_whitespace'],
 \   'c': ['trim_whitespace'],
