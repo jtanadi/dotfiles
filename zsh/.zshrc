@@ -111,9 +111,11 @@ alias configi3blocks="vim ~/.config/i3/i3blocks.conf"
 alias configcompton="vim ~/.config/compton.conf"
 alias configvim="vim ~/.vimrc"
 alias configzsh="vim ~/.zshrc"
+alias configterm="vim ~/.config/alacritty/alacritty.yml"
 
 # change dir aliases
 alias svsp="cd ~/Work/CSedu/0-FullStack\ Academy/2-Senior/1-grace-shopper"
+alias dejaview="cd ~/Work/CSedu/0-FullStack\ Academy/2-Senior/2-stackathon"
 alias sandbox="cd ~/Work/sandbox"
 alias csEdu="cd ~/Work/CSedu/"
 alias cs50="cd ~/Work/CSedu/1-Core\ Programming/0-CS50/"
