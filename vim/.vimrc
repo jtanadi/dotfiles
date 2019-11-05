@@ -110,13 +110,17 @@ let g:ale_change_sign_column_color = 1
 
 
 " ALE Fixing
+let g:ale_linter_aliases = {
+\   'typescriptreact': 'typescript',
+\   'javascriptreact': 'javascript',
+\}
+
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
 \   'html': ['trim_whitespace'],
 \   'css': ['trim_whitespace'],
 \   'javascript': ['prettier', 'eslint', 'trim_whitespace'],
-\   'javascriptreact': ['prettier', 'eslint', 'trim_whitespace'],
-\   'jsx': ['prettier', 'eslint', 'trim_whitespace'],
+\   'typescript': ['prettier', 'eslint', 'trim_whitespace'],
 \   'python': ['trim_whitespace'],
 \   'c': ['trim_whitespace'],
 \}
