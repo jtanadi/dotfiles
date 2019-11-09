@@ -74,6 +74,11 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" Jumping
+nnoremap <C-]> :ALEGoToDefinition<CR>
+nnoremap <C-E> :ALEPrevious<CR>
+nnoremap <C-R> :ALENext<CR>
+
 """"""""""""""""""""
 "      COLORS      "
 """"""""""""""""""""
