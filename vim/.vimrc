@@ -9,6 +9,7 @@ execute pathogen#infect()
 
 " Use mouse normally
 set mouse=a
+let g:NERDTreeMouseMode=3
 
 " Set backspace to work like other programs
 set backspace=indent,eol,start
