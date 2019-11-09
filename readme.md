@@ -9,3 +9,8 @@ Symlink dotfiles to make updates easier
 ```
 ln -s {filepath} {linkpath}
 ```
+
+Install `typescript` to enable vim Language Server Protocol (for `:ALEGoToDefinition`)
+```
+npm i -g typescript
+```
