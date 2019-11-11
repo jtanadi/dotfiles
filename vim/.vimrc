@@ -76,8 +76,8 @@ nnoremap <C-H> <C-W><C-H>
 
 " Jumping
 nnoremap <C-]> :ALEGoToDefinition<CR>
-nnoremap <C-E> :ALEPrevious<CR>
-nnoremap <C-R> :ALENext<CR>
+nnoremap <leader>N :ALEPrevious<CR>
+nnoremap <leader>n :ALENext<CR>
 
 """"""""""""""""""""
 "      COLORS      "
