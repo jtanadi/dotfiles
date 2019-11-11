@@ -104,6 +104,9 @@ alias copy="xclip -selection clipboard"
 alias restartcompton="pkill compton; compton -b"
 alias postgres="service postgresql start"
 alias startSSH='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa'
+alias ..="cd .."
+alias ....="cd ../.."
+alias ......="cd ../../.."
 
 # Editing configs
 alias configi3="vim ~/.config/i3/config"
