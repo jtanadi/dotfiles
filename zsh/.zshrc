@@ -119,6 +119,7 @@ alias configterm="vim ~/.config/alacritty/alacritty.yml"
 # change dir aliases
 alias svsp="cd ~/Work/CSedu/0-FullStack\ Academy/2-Senior/1-grace-shopper"
 alias dejaview="cd ~/Work/CSedu/0-FullStack\ Academy/2-Senior/2-stackathon"
+alias capstone="cd ~/Work/CSedu/0-FullStack\ Academy/2-Senior/3-capstone"
 alias sandbox="cd ~/Work/sandbox"
 alias csEdu="cd ~/Work/CSedu/"
 alias cs50="cd ~/Work/CSedu/1-Core\ Programming/0-CS50/"
