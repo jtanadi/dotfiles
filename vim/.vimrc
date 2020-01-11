@@ -74,11 +74,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" Jumping
-" nnoremap <C-]> :ALEGoToDefinition<CR>
-" nnoremap <leader>N :ALEPrevious<CR>
-" nnoremap <leader>n :ALENext<CR>
-
 " Moving blocks of text A-j moves up, A-k moves down
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
@@ -114,6 +109,31 @@ highlight ALESignColumnWithErrors ctermbg=217
 highlight ALESignColumnWithoutErrors ctermbg=0
 highlight ALEErrorSign ctermbg=NONE ctermfg=red
 highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+
+"""""""""""""""""""""
+"     CoC.nvim      "
+"""""""""""""""""""""
+set updatetime=300
+
+" use <tab> for trigger completion and navigate to next complete item
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+
+"Close preview window when completion is done.
+autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+
+" Remap keys for gotos
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 """""""""""""""""""""
 "      LINTING      "
