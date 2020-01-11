@@ -99,9 +99,6 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 # Commands
-alias ..="cd .."
-alias ....="cd ../.."
-alias ......="cd ../../.."
 alias copy="xclip -selection clipboard"
 alias open="xdg-open"
 alias postgres="service postgresql start"
@@ -119,18 +116,15 @@ alias configzsh="vim ~/.zshrc"
 alias configterm="vim ~/.config/alacritty/alacritty.yml"
 
 # change dir aliases
-alias svsp="cd ~/Work/CSedu/0-FullStack\ Academy/2-Senior/1-grace-shopper"
-alias dejaview="cd ~/Work/CSedu/0-FullStack\ Academy/2-Senior/2-stackathon"
-alias capstone="cd ~/Work/CSedu/0-FullStack\ Academy/2-Senior/3-capstone"
-alias sandbox="cd ~/Work/sandbox"
-alias csEdu="cd ~/Work/CSedu/"
-alias cs50="cd ~/Work/CSedu/1-Core\ Programming/0-CS50/"
-alias simpleData="cd ~/Work/CSedu/1-Core\ Programming/1-HowToCode-SimpleData"
+alias cs="cd ~/Work/CSedu/"
 alias nodeSchool="cd ~/Work/CSedu/1-Core\ Programming/z-NodeSchool"
 alias fullstack="cd ~/Work/CSedu/0-FullStack\ Academy/"
-alias fullstackNotes="cd ~/Work/CSedu/0-FullStack\ Academy/z-Notes"
-alias algorithms1="cd /home/jtanadi/Work/CSedu/3-Core\ Theory/1-Algorithms1"
+alias mitalgo="cd ~/Work/CSedu/3-Core\ Theory/0-Intro\ to\ Algorithms"
+alias algo="cd ~/Work/algo-DS"
+
 alias work="cd ~/Work/"
+alias web="cd ~/Work/web2020"
+alias sandbox="cd ~/Work/sandbox"
 alias cork="cd ~/Work/cork"
 alias raaIndd="cd ~/Work/raa/indd"
 alias raaPy="cd ~/Work/raa/py"
