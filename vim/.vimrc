@@ -1,3 +1,4 @@
+" let $NVIM_COC_LOG_LEVEL = 'debug'
 """"""""""""""""""""
 "      BASICS      "
 """"""""""""""""""""
@@ -110,9 +111,15 @@ highlight ALESignColumnWithoutErrors ctermbg=0
 highlight ALEErrorSign ctermbg=NONE ctermfg=red
 highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 
+" highlight ALESignColumnWithErrors ctermbg=217
+highlight SignColumn ctermbg=0
+
 """""""""""""""""""""
 "     CoC.nvim      "
 """""""""""""""""""""
+" always show signcolumns
+set signcolumn=yes
+
 set updatetime=300
 
 " use <tab> for trigger completion and navigate to next complete item
@@ -134,6 +141,20 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+"
+" set filetypes as typescript.tsx
+autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
+
+" Use K to show documentation in preview window
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
 
 """""""""""""""""""""
 "      LINTING      "
@@ -144,20 +165,12 @@ let g:ale_sign_warning = '⚠'
 let g:ale_set_highlights = 0
 let g:ale_sign_column_always = 1
 let g:ale_change_sign_column_color = 1
-let g:ale_linter_aliases = {
-\   'typescriptreact': 'typescript',
-\   'javascriptreact': 'javascript',
-\}
 
 " ALE Fixing
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
 \   'html': ['trim_whitespace'],
 \   'css': ['trim_whitespace'],
-\   'javascript': ['prettier', 'eslint', 'trim_whitespace'],
-\   'javascriptreact': ['prettier', 'eslint', 'trim_whitespace'],
-\   'typescript': ['prettier', 'eslint', 'trim_whitespace'],
-\   'typescriptreact': ['prettier', 'eslint', 'trim_whitespace'],
 \   'python': ['trim_whitespace'],
 \   'c': ['trim_whitespace'],
 \}
