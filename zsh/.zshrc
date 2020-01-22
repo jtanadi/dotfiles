@@ -120,7 +120,7 @@ alias cs="cd ~/Work/CSedu/"
 alias nodeSchool="cd ~/Work/CSedu/1-Core\ Programming/z-NodeSchool"
 alias fullstack="cd ~/Work/CSedu/0-FullStack\ Academy/"
 alias mitalgo="cd ~/Work/CSedu/3-Core\ Theory/0-Intro\ to\ Algorithms"
-alias algo="cd ~/Work/algo-DS"
+alias algo="cd ~/Work/algo-ds"
 
 alias work="cd ~/Work/"
 alias web="cd ~/Work/web2020"
