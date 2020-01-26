@@ -16,9 +16,9 @@ let g:NERDTreeMouseMode=3
 set backspace=indent,eol,start
 
 " Spaces and tabs
-set shiftwidth=4                     " number of spaces for autoindent
-set tabstop=4                        " tabstop is the number of spaces a tab counts
-set softtabstop=4                    " number of spaces inserted per tab
+set shiftwidth=2                     " number of spaces for autoindent
+set tabstop=2                        " tabstop is the number of spaces a tab counts
+set softtabstop=2                    " number of spaces inserted per tab
 set expandtab                        " turns tabs into spaces
 filetype plugin indent on            " load filetype-specific indent files
 set linebreak                        " don't break in the middle of words
