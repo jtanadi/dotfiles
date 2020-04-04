@@ -99,18 +99,16 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 # Commands
-alias copy="xclip -selection clipboard"
 alias open="xdg-open"
+alias copy="xclip -selection clipboard"
 alias postgres="service postgresql start"
 alias py="python"
 alias py3="python3"
-alias restartcompton="pkill compton; compton -b"
 alias startSSH='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa'
+alias cpwd="pwd | tr -d '\n' | copy"
+alias t="tmux"
 
 # Editing configs
-alias configi3="vim ~/.config/i3/config"
-alias configi3blocks="vim ~/.config/i3/i3blocks.conf"
-alias configcompton="vim ~/.config/compton.conf"
 alias configvim="vim ~/.vimrc"
 alias configzsh="vim ~/.zshrc"
 alias configterm="vim ~/.config/alacritty/alacritty.yml"
@@ -125,8 +123,6 @@ alias algo="cd ~/Work/algo-ds"
 alias work="cd ~/Work/"
 alias web="cd ~/Work/web2020"
 alias sandbox="cd ~/Work/sandbox"
-alias cork="cd ~/Work/cork"
-alias raaIndd="cd ~/Work/raa/indd"
-alias raaPy="cd ~/Work/raa/py"
+alias raa="cd ~/Work/raa-tools"
 alias dotfiles="cd ~/Work/dotfiles"
 
