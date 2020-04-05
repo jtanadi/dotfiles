@@ -7,5 +7,6 @@
   "diagnostic.warningSign": "⚠",
   "diagnostic.infoSign": "⚠", 
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "javascript.suggestionActions.enabled": false,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true
 }
