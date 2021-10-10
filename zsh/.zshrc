@@ -128,3 +128,7 @@ alias sandbox="cd ~/Work/sandbox"
 alias raa="cd ~/Work/raa-tools"
 alias dotfiles="cd ~/Work/dotfiles"
 
+# Use nvim
+alias vim="nvim"
+alias vi="nvim"
+
