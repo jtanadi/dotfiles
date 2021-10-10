@@ -109,10 +109,10 @@ alias cpwd="pwd | tr -d '\n' | copy"
 alias t="tmux"
 
 # Editing configs
-alias configvim="vim ~/.config/nvim/init.vim"
-alias configzsh="vim ~/.zshrc"
-alias configterm="vim ~/.config/alacritty/alacritty.yml"
-alias configtmux="vim ~/.tmux.conf"
+alias configvim="vi ~/.config/nvim/init.vim"
+alias configzsh="vi ~/.zshrc"
+alias configterm="vi ~/.config/alacritty/alacritty.yml"
+alias configtmux="vi ~/.tmux.conf"
 
 # change dir aliases
 alias cs="cd ~/Work/CSedu/"
