@@ -120,18 +120,8 @@ alias configterm="vi ~/.config/alacritty/alacritty.yml"
 alias configtmux="vi ~/.tmux.conf"
 
 # change dir aliases
-alias cs="cd ~/Work/CSedu/"
-alias nodeSchool="cd ~/Work/CSedu/1-Core\ Programming/z-NodeSchool"
-alias fullstack="cd ~/Work/CSedu/0-FullStack\ Academy/"
-alias mitalgo="cd ~/Work/CSedu/3-Core\ Theory/0-Intro\ to\ Algorithms"
-alias algo="cd ~/Work/algo-ds"
-
 alias work="cd ~/Work/"
-alias dev="cd ~/Work/dev2020"
-alias design="cd ~/Work/design2020"
-alias sandbox="cd ~/Work/sandbox"
-alias raa="cd ~/Work/raa-tools"
-alias dotfiles="cd ~/Work/dotfiles"
+alias eng = "cd ~/Work/EngSci/"
 
 # Use nvim
 alias vim="nvim"
