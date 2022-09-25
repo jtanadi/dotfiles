@@ -182,3 +182,8 @@ let g:ale_fixers = {
 call plug#begin()
   Plug 'https://github.com/xuhdev/vim-latex-live-preview.git'
 call plug#end()
+
+"""""""""""""""""""""
+"    TEX PREVIEW    "
+"""""""""""""""""""""
+let g:livepreview_engine = 'xelatex'
