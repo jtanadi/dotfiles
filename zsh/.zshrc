@@ -122,7 +122,7 @@ alias configtmux="vi ~/.tmux.conf"
 # change dir aliases
 alias work="cd ~/Work/"
 alias dotfiles="cd ~/Work/dotfiles"
-alias engsci="cd ~/Work/EngSci/Fall22"
+alias books="cd ~/Work/books"
 
 # Use nvim
 alias vim="nvim"
