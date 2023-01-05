@@ -111,24 +111,20 @@
 
 # Font configuration
 font:
-  #normal:
-    #family: MD IO 0.5
-    #style: Medium
+  normal:
+    family: MD IO 0.5
+    style: Medium
 
-  #bold:
-    #family: monospace
-    #style: Black
+  bold:
+    style: Bold
 
-  #italic:
-    #family: monospace
-    #style: Italic
+  italic:
+    style: Medium Italic
 
-  #bold_italic:
-    #family: monospace
-    #style: Black Italic
+  bold_italic:
+    style: Bold Italic
 
-  # Point size
-  size: 12.0
+  size: 11.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -536,7 +532,7 @@ font:
 #    - Key0-Key9
 #
 #    A full list with available key codes can be found here:
-#    https://docs.rs/glutin/*/glutin/event/enum.VirtualKeyCode.html#variants
+#    https://docs.rs/winit/*/winit/event/enum.VirtualKeyCode.html#variants
 #
 #    Instead of using the name of the keys, the `key` field also supports using
 #    the scancode of the desired key. Scancodes have to be specified as a
@@ -869,3 +865,4 @@ font:
 
   # Highlight window damage information.
   #highlight_damage: false
+
