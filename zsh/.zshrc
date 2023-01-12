@@ -123,6 +123,8 @@ alias configtmux="vi ~/.tmux.conf"
 alias work="cd ~/Work/"
 alias dotfiles="cd ~/Work/dotfiles"
 alias books="cd ~/Work/books"
+alias app="cd ~/Work/appDocs"
+alias dl="cd ~/Downloads"
 
 # Use nvim
 alias vim="nvim"
