@@ -125,6 +125,7 @@ alias dotfiles="cd ~/Work/dotfiles"
 alias books="cd ~/Work/books"
 alias ap="cd ~/Work/appDocs"
 alias dl="cd ~/Downloads"
+alias math="cd ~/Work/bcmath/Spring2023"
 
 # Use nvim
 alias vim="nvim"
