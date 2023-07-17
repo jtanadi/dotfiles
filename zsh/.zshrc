@@ -126,7 +126,7 @@ alias books="cd ~/Work/books"
 alias ap="cd ~/Work/appDocs"
 alias dl="cd ~/Downloads"
 alias math="cd ~/Work/bcmath/PolymathSummer2023"
-alias ml = "cd ~/Work/MatLab/2-DataSignalImage"
+alias ml="cd ~/Work/MatLab/2-DataSignalImage"
 
 # Use nvim
 alias vim="nvim"
