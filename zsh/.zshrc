@@ -106,18 +106,15 @@ bindkey '\e' autosuggest-clear
 # Commands
 alias open="xdg-open"
 alias copy="xclip -selection clipboard"
-alias postgres="service postgresql start"
 alias py="python"
 alias py3="python3"
 alias startSSH='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa'
 alias cpwd="pwd | tr -d '\n' | copy"
-alias t="tmux"
 
 # Editing configs
 alias configvim="vi ~/.config/nvim/init.vim"
 alias configzsh="vi ~/.zshrc"
-alias configterm="vi ~/.config/alacritty/alacritty.yml"
-alias configtmux="vi ~/.tmux.conf"
+alias configterm="vi /home/jesentanadi/.config/kitty/kitty.conf"
 
 # change dir aliases
 alias work="cd ~/Work/"
@@ -125,8 +122,7 @@ alias dotfiles="cd ~/Work/dotfiles"
 alias books="cd ~/Work/books"
 alias ap="cd ~/Work/appDocs"
 alias dl="cd ~/Downloads"
-alias math="cd ~/Work/bcmath/PolymathSummer2023"
-alias ml="cd ~/Work/MatLab/2-DataSignalImage"
+alias math="cd ~/Work/bcmath/Spring2023/"
 
 # Use nvim
 alias vim="nvim"
