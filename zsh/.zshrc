@@ -120,10 +120,11 @@ alias configterm="vi /home/jesentanadi/.config/kitty/kitty.conf"
 # change dir aliases
 alias work="cd ~/Work/"
 alias dotfiles="cd ~/Work/dotfiles"
-alias books="cd ~/Work/books"
+alias books="cd ~/Work/booksAndPapers"
 alias ap="cd ~/Work/appDocs"
 alias dl="cd ~/Downloads"
-alias math="cd ~/Work/bcmath/Fall2023/"
+alias math="cd ~/Work/bcmath/Spring2024/"
+alias docs="cd ~/Documents"
 
 # Use nvim
 alias vim="nvim"
