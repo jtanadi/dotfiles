@@ -83,8 +83,12 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
-" Markdown preview
-let vim_markdown_preview_github=1
+" Paste image
+map <M-p> :PasteImage<CR>
+
+" Markdown Preview
+nmap <C-p> <Plug>MarkdownPreview
+
 
 """"""""""""""""""""
 "      COLORS      "
@@ -181,5 +185,7 @@ let g:ale_fixers = {
 " Using vim-plug
 call plug#begin()
    Plug 'lervag/vimtex'
+   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+   Plug 'HakonHarnes/img-clip.nvim'
 call plug#end()
 
