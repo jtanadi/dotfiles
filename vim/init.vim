@@ -1,9 +1,18 @@
-" let $NVIM_COC_LOG_LEVEL = 'debug'
 """"""""""""""""""""
 "      BASICS      "
 """"""""""""""""""""
 "for parcel
 set backupcopy=yes
+
+"for vimwiki
+set nocompatible
+let g:vimwiki_list = [{'syntax': 'markdown', 'ext': 'md'}]
+
+" For reference:
+" let g:vimwiki_list = [{'path': '~/mywiki/', 'path_html': '~/mywiki_html'}]
+
+" To turn off feature where every MD file is a wiki
+" let g:vimwiki_global_ext = 0
 
 " Start pathogen package manager
 execute pathogen#infect()
@@ -187,5 +196,6 @@ call plug#begin()
    Plug 'lervag/vimtex'
    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
    Plug 'HakonHarnes/img-clip.nvim'
+   Plug 'vimwiki/vimwiki'
 call plug#end()
 
