@@ -6,7 +6,7 @@ set backupcopy=yes
 
 "for vimwiki
 set nocompatible
-let g:vimwiki_list = [{'syntax': 'markdown', 'ext': 'md'}]
+let g:vimwiki_list = [{'syntax': 'markdown', 'ext': 'md', 'path': '~/Work/phdWiki/'}]
 
 " For reference:
 " let g:vimwiki_list = [{'path': '~/mywiki/', 'path_html': '~/mywiki_html'}]
