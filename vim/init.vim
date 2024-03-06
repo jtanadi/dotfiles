@@ -8,11 +8,11 @@ set backupcopy=yes
 set nocompatible
 let g:vimwiki_list = [{'syntax': 'markdown', 'ext': 'md', 'path': '~/Work/phdWiki/'}]
 
+" To turn off feature where every MD file is a wiki
+let g:vimwiki_global_ext = 0
+
 " For reference:
 " let g:vimwiki_list = [{'path': '~/mywiki/', 'path_html': '~/mywiki_html'}]
-
-" To turn off feature where every MD file is a wiki
-" let g:vimwiki_global_ext = 0
 
 " Start pathogen package manager
 execute pathogen#infect()
