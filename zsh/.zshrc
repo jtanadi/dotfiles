@@ -118,7 +118,6 @@ alias py3="python3"
 alias startSSH='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa'
 alias cpwd="pwd | tr -d '\n' | copy"
 alias arduino="~/.local/share/applications/arduino-ide_2.1.1_Linux_64bit.AppImage"
-alias wiki="vi -c VimwikiIndex"
 
 # Editing configs
 alias configvim="vi ~/.config/nvim/init.vim"
@@ -141,8 +140,8 @@ alias vi="nvim"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Vimwiki Git integration
-vimwiki () {
+# Vimwiki from command line & git integration
+wiki () {
     if [[ $# == 0 ]]
     then
         nvim +'VimwikiIndex'
@@ -150,6 +149,6 @@ vimwiki () {
     then
         git -C ~/Work/phdWiki/ ${@:2}
     else
-        echo 'Usage: vimwiki [git] [args ...]'
+        echo 'Usage: wiki [git] [args ...]'
     fi
 }
