@@ -11,7 +11,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # If you come from bash you might have to change your $PATH.
-  export PATH=$PATH:$HOME/bin:$HOME/.local/bin
+  export PATH=$PATH:$HOME/bin:$HOME/.local/bin:/usr/local/texlive/2024basic/bin/universal-darwin
 
 # Path to your oh-my-zsh installation.
   export ZSH="$HOME/.oh-my-zsh"
@@ -111,7 +111,6 @@ bindkey '\e' autosuggest-clear
 # For a full list of active aliases, run `alias`.
 
 # Commands
-alias open="xdg-open"
 alias copy="xclip -selection clipboard"
 alias py="python"
 alias py3="python3"
@@ -132,6 +131,7 @@ alias lit="cd ~/Work/literature"
 alias dl="cd ~/Downloads"
 alias duke="cd ~/Work/duke-courses/Fall2024"
 alias lab="cd ~/Work/duke-list"
+alias list="cd ~/Work/duke-list"
 alias sandbox="cd ~/Work/sandbox"
 alias math="cd ~/Work/bcmath"
 alias docs="cd ~/Documents"
