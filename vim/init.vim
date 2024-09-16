@@ -102,21 +102,22 @@ nmap <C-p> <Plug>MarkdownPreview
 """"""""""""""""""""
 "      COLORS      "
 """"""""""""""""""""
+
 " Line number
-hi LineNr ctermbg=16 ctermfg=3
-
-" Cursorline
-hi CursorLine cterm=NONE ctermbg=235 " no underline, gray bg
-hi CursorLineNr cterm=NONE ctermbg=2 ctermfg=16
-autocmd InsertEnter * highlight CursorLine ctermbg=237
-autocmd InsertLeave * highlight CursorLine ctermbg=235
-
-" Folding
-hi Folded ctermbg=16 ctermfg=6
-hi FoldColumn ctermbg=16 ctermfg=6
-
-" Parentheses / brackets / quotes
-hi MatchParen ctermbg=239 ctermfg=6
+"hi LineNr ctermbg=16 ctermfg=3
+"
+"" Cursorline
+"hi CursorLine cterm=NONE ctermbg=235 " no underline, gray bg
+"hi CursorLineNr cterm=NONE ctermbg=2 ctermfg=16
+"autocmd InsertEnter * highlight CursorLine ctermbg=237
+"autocmd InsertLeave * highlight CursorLine ctermbg=235
+"
+"" Folding
+"hi Folded ctermbg=16 ctermfg=6
+"hi FoldColumn ctermbg=16 ctermfg=6
+"
+"" Parentheses / brackets / quotes
+"hi MatchParen ctermbg=239 ctermfg=6
 
 " ALE colors
 highlight ALESignColumnWithErrors ctermbg=217
@@ -197,5 +198,10 @@ call plug#begin()
    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
    Plug 'HakonHarnes/img-clip.nvim'
    Plug 'vimwiki/vimwiki'
+   Plug 'rakr/vim-one'
 call plug#end()
 
+let g:airline_theme='one'
+colorscheme one
+set background=dark
+let g:one_allow_italics=1
