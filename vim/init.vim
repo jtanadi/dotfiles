@@ -119,6 +119,9 @@ nmap <C-p> <Plug>MarkdownPreview
 "" Parentheses / brackets / quotes
 "hi MatchParen ctermbg=239 ctermfg=6
 
+colorscheme twilight256
+set notermguicolors
+
 " ALE colors
 highlight ALESignColumnWithErrors ctermbg=217
 highlight ALESignColumnWithoutErrors ctermbg=0
