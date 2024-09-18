@@ -198,10 +198,4 @@ call plug#begin()
    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
    Plug 'HakonHarnes/img-clip.nvim'
    Plug 'vimwiki/vimwiki'
-   Plug 'rakr/vim-one'
 call plug#end()
-
-let g:airline_theme='one'
-colorscheme one
-set background=dark
-let g:one_allow_italics=1
