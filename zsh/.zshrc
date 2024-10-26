@@ -124,19 +124,24 @@ alias configvim="vi ~/.config/nvim/init.vim"
 alias configzsh="vi ~/.zshrc"
 alias configterm="vi /home/jesentanadi/.config/kitty/kitty.conf"
 
-# change dir aliases
+# Change dir aliases (general)
 alias work="cd ~/Work/"
 alias dotfiles="cd ~/Work/dotfiles"
 alias books="cd ~/Work/books"
 alias lit="cd ~/Work/literature"
 alias dl="cd ~/Downloads"
-alias duke="cd ~/Work/duke-courses/Fall2024"
-alias lab="cd ~/Work/duke-list"
-alias list="cd ~/Work/duke-list"
 alias sandbox="cd ~/Work/sandbox"
-alias math="cd ~/Work/bcmath"
 alias docs="cd ~/Documents"
 alias cv="cd ~/Work/CV/"
+
+# Change dir aliases (Duke)
+alias lab="cd ~/Work/duke-list"
+alias list="cd ~/Work/duke-list"
+alias duke="cd ~/Work/duke-courses/Fall2024"
+
+# Change dir aliases (projects)
+alias urbano="cd ~/Work/Urbano/"
+alias chapel="cd ~/Work/Duke-Chapel-Sensing/"
 
 # Use nvim
 alias vim="nvim"
