@@ -117,6 +117,7 @@ alias py3="python3"
 alias startSSH='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa'
 alias cpwd="pwd | tr -d '\n' | copy"
 alias arduino="~/.local/share/applications/arduino-ide_2.1.1_Linux_64bit.AppImage"
+alias skim="open -a Skim"
 
 # Editing configs
 alias configvim="vi ~/.config/nvim/init.vim"
