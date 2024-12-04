@@ -201,4 +201,6 @@ call plug#begin()
    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
    Plug 'HakonHarnes/img-clip.nvim'
    Plug 'vimwiki/vimwiki'
+   Plug 'tpope/vim-surround'
+   Plug 'tpope/vim-commentary'
 call plug#end()
