@@ -138,6 +138,7 @@ alias cv="cd ~/Work/CV/"
 alias lab="cd ~/Work/duke-list"
 alias list="cd ~/Work/duke-list"
 alias duke="cd ~/Work/duke-courses/Fall2024"
+alias phd="cd ~/Work/phdWiki"
 
 # Change dir aliases (projects)
 alias urbano="cd ~/Work/Urbano/"
