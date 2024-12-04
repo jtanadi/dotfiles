@@ -1,0 +1,123 @@
+% Math-specific preamble
+
+\usepackage{amsmath} % provides many mathematical environments & tools
+\usepackage{amsthm} % for proofs
+\usepackage{amssymb} % math symbols
+\usepackage{centernot} % for negations
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage[makeroom]{cancel} % math cancels
+\usepackage{adjustbox}
+\usepackage{breqn} % math equation break
+
+\graphicspath{{./1-images/}}
+\setlength{\parindent}{0pt}
+
+% Set symbols shortcuts
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\st}{\text{ s.t.\;}}
+\newcommand{\eps}{\boldsymbol{\varepsilon}} % Also make epsilon bolder
+\newcommand{\intr}[1]{\text{int}(#1)} % Interior points of set
+\newcommand{\bd}[1]{\text{bd}(#1)} % Boundary points of set
+\newcommand{\cl}[1]{\text{cl}(#1)} % Closure of set
+
+\renewcommand{\implies}{\Rightarrow} % shorter implies
+\renewcommand{\iff}{\Leftrightarrow} % shorter iff
+\renewcommand{\qedsymbol}{\boxtimes} % Box with cross QED
+
+\renewcommand{\Re}{\operatorname{Re}}
+\renewcommand{\Im}{\operatorname{Im}}
+
+% To write two-part definitions easier
+\newcommand{\twopartdef}[4]
+{
+	\left\{
+		\begin{array}{ll}
+			#1 & #2 \\
+			#3 & #4
+		\end{array}
+	\right.
+}
+
+% And three-part definitions
+\newcommand{\threepartdef}[6]
+{
+	\left\{
+		\begin{array}{lll}
+			#1 & #2 \\
+			#3 & #4 \\
+			#5 & #6
+		\end{array}
+	\right.
+}
+
+% And four-part definitions
+\newcommand{\fourpartdef}[8]
+{
+	\left\{
+		\begin{array}{lll}
+			#1 & #2 \\
+			#3 & #4 \\
+			#5 & #6 \\
+			#7 & #8
+		\end{array}
+	\right.
+}
+
+% Underline vectors and double underline matrices
+\newcommand{\vx}[1]{\underline{#1}}
+\newcommand{\mx}[1]{\underline{\underline{#1}}}
+
+% Better T for transpose
+\newcommand{\transpose}[1]{#1^\intercal}
+
+% More convenient abs
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+
+% More convenient floor and ceil
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+% Linear algebra shortcuts
+\newcommand{\rref}{\operatorname{rref}}
+\newcommand{\mref}{\operatorname{ref}}
+\newcommand{\vspan}{\operatorname{span}}
+\newcommand{\vrank}{\operatorname{rank}}
+\newcommand{\vnullity}{\operatorname{nullity}}
+\newcommand{\vrange}{\mathcal{R}}
+\newcommand{\vnull}{\mathcal{N}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\DeclarePairedDelimiterX{\inner}[2]{\langle}{\rangle}{#1,#2}
+\newcommand{\conj}[1]{\overline{#1}}
+
+% Conditional probability
+\newcommand\given{\:\vert\:}
+
+% Probability & statistics shortcuts
+\newcommand{\E}{\operatorname{E}} % Expectation
+\newcommand{\Var}{\operatorname{Var}} % Variance
+\newcommand{\Cov}{\operatorname{Cov}} % Covariance
+\newcommand{\Bin}{\operatorname{Bin}} % Binomial dist
+\newcommand{\Be}{\operatorname{Be}} % Bernoulli dist
+\newcommand{\Po}{\operatorname{Po}} % Poisson dist
+\newcommand{\Pa}{\operatorname{Pa}} % Pascal dist
+\newcommand{\Exp}{\operatorname{Exp}} % Exponential dist
+\newcommand{\Erl}{\operatorname{Erlang}} % Exponential dist
+\newcommand{\Geo}{\operatorname{Geo}} % Geometric dist
+\newcommand{\U}{\mathcal{U}} % Uniform dist
+\newcommand{\Norm}{\mathcal{N}} % Normal dist
+\newcommand*\mean[1]{\overline{#1}} % Mean (bar)
+\newcommand{\pval}{p\text{-value}} % p-value
+
+% Equalities
+\newcommand{\eqdef}{\stackrel{\mathclap{\normalfont\mbox{def}}}{=}} % By definition
+\newcommand{\eqdist}{\stackrel{\mathclap{d}}{=}} % Equal in distribution
+\newcommand{\approxdist}{\stackrel{\mathclap{d}}{\approx}} % Approx in distribution
+
