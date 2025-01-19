@@ -28,6 +28,9 @@
 \newcommand{\bd}[1]{\text{bd}(#1)} % Boundary points of set
 \newcommand{\cl}[1]{\text{cl}(#1)} % Closure of set
 
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
+
 \renewcommand{\implies}{\Rightarrow} % shorter implies
 \renewcommand{\iff}{\Leftrightarrow} % shorter iff
 \renewcommand{\qedsymbol}{\boxtimes} % Box with cross QED
@@ -72,12 +75,11 @@
 }
 
 % Underline vectors and double underline matrices
-\newcommand{\vx}[1]{\mathbf{#1}}
-\newcommand{\mx}[1]{[#1]}
+\newcommand{\vx}[1]{\underline{#1}}
+\newcommand{\mx}[1]{\underline{\underline{#1}}}
 
 % Better T for transpose
 \newcommand{\transpose}[1]{#1^\intercal}
-\newcommand{\invtranspose}[1]{#1^{-\intercal}}
 
 % More convenient abs
 \newcommand{\abs}[1]{\left\lvert#1\right\rvert}
