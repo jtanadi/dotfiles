@@ -137,8 +137,9 @@ alias cv="cd ~/Work/CV/"
 # Change dir aliases (Duke)
 alias lab="cd ~/Work/duke-list"
 alias list="cd ~/Work/duke-list"
-alias duke="cd ~/Work/duke-courses/Fall2024"
+alias duke="cd ~/Work/duke-courses/Spring2025"
 alias phd="cd ~/Work/phdWiki"
+alias box="cd '/Users/jesentanadi/Library/CloudStorage/Box-Box/TEAM 3853-5479: DUKE-LIST-PRIVATE/00-individual/Tanadi'"
 
 # Change dir aliases (projects)
 alias urbano="cd ~/Work/Urbano/"
