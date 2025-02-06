@@ -144,6 +144,7 @@ alias box="cd '/Users/jesentanadi/Library/CloudStorage/Box-Box/TEAM 3853-5479: D
 # Change dir aliases (projects)
 alias urbano="cd ~/Work/Urbano/"
 alias chapel="cd ~/Work/Duke-Chapel-Sensing/"
+alias pinn="cd ~/Work/PINNs-EIT"
 
 # Use nvim
 alias vim="nvim"
