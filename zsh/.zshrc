@@ -142,9 +142,9 @@ alias phd="cd ~/Work/phdWiki"
 alias box="cd '/Users/jesentanadi/Library/CloudStorage/Box-Box/TEAM 3853-5479: DUKE-LIST-PRIVATE/00-individual/Tanadi'"
 
 # Change dir aliases (projects)
-alias urbano="cd ~/Work/Urbano/"
-alias chapel="cd ~/Work/Duke-Chapel-Sensing/"
-alias pinn="cd ~/Work/PINNs-EIT"
+alias urbano="cd ~/Work/duke-list/2-Projects/Urbano/"
+alias chapel="cd ~/Work/duke-list/2-Projects/Duke-Chapel-Sensing/"
+alias pinn="cd ~/Work/duke-list/2-Projects/PINNs-EIT"
 
 # Use nvim
 alias vim="nvim"
