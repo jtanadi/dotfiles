@@ -35,37 +35,31 @@
 % To write two-part definitions easier
 \newcommand{\twopartdef}[4]
 {
-	\left\{
-		\begin{array}{ll}
-			#1 & #2 \\
-			#3 & #4
-		\end{array}
-	\right.
+  \begin{cases}
+    #1 & #2 \\
+    #3 & #4
+  \end{cases}
 }
 
 % And three-part definitions
 \newcommand{\threepartdef}[6]
 {
-	\left\{
-		\begin{array}{lll}
-			#1 & #2 \\
-			#3 & #4 \\
-			#5 & #6
-		\end{array}
-	\right.
+  \begin{cases}
+    #1 & #2 \\
+    #3 & #4 \\
+    #5 & #6
+  \end{cases}
 }
 
 % And four-part definitions
 \newcommand{\fourpartdef}[8]
 {
-	\left\{
-		\begin{array}{lll}
-			#1 & #2 \\
-			#3 & #4 \\
-			#5 & #6 \\
-			#7 & #8
-		\end{array}
-	\right.
+  \begin{cases}
+    #1 & #2 \\
+    #3 & #4 \\
+    #5 & #6 \\
+    #7 & #8
+  \end{cases}
 }
 
 % argmin, argmax
