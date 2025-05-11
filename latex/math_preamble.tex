@@ -20,7 +20,7 @@
 \newcommand{\F}{\mathbb{F}}
 \newcommand{\I}{\mathbb{I}}
 \newcommand{\st}{\text{ s.t.\;}}
-\newcommand{\eps}{\boldsymbol{\varepsilon}} % Also make epsilon bolder
+\newcommand{\eps}{\varepsilon}
 \newcommand{\intr}[1]{\text{int}(#1)} % Interior points of set
 \newcommand{\bd}[1]{\text{bd}(#1)} % Boundary points of set
 \newcommand{\cl}[1]{\text{cl}(#1)} % Closure of set
@@ -28,6 +28,13 @@
 \renewcommand{\implies}{\Rightarrow} % shorter implies
 \renewcommand{\iff}{\Leftrightarrow} % shorter iff
 \renewcommand{\qedsymbol}{\boxtimes} % Box with cross QED
+
+% For all, there exists, there exists unique all with space
+\let\oldforall\forall
+\renewcommand{\forall}{\oldforall \, }
+\let\oldexist\exists
+\renewcommand{\exists}{\oldexist \: }
+\newcommand\existu{\oldexist! \: }
 
 \renewcommand{\Re}{\operatorname{Re}}
 \renewcommand{\Im}{\operatorname{Im}}
@@ -68,7 +75,7 @@
 
 % Underline vectors and double underline matrices
 \newcommand{\vx}[1]{\mathbf{#1}}
-\newcommand{\mx}[1]{[#1]}
+\newcommand{\mx}[1]{\mathbf{#1}}
 
 % Better T for transpose
 \newcommand{\transpose}[1]{#1^\intercal}
