@@ -145,6 +145,7 @@ alias box="cd '/Users/jesentanadi/Library/CloudStorage/Box-Box/TEAM 3853-5479: D
 alias urbano="cd ~/Work/duke-list/2-Projects/Urbano/"
 alias chapel="cd ~/Work/duke-list/2-Projects/Duke-Chapel-Sensing/"
 alias pinn="cd ~/Work/duke-list/2-Projects/PINNs-EIT"
+alias dbar="cd ~/Work/duke-list/2-Projects/Deep-Dbar"
 
 # Use nvim
 alias vim="nvim"
