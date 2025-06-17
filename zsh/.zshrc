@@ -151,6 +151,10 @@ alias dbar="cd ~/Work/duke-list/2-Projects/Deep-Dbar"
 alias vim="nvim"
 alias vi="nvim"
 
+
+# DCC alias
+[ "$TERM" = "xterm-kitty" ] && alias dcc="kitty +kitten ssh jt430@dcc-login.oit.duke.edu"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
