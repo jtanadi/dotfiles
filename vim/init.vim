@@ -13,9 +13,10 @@ let g:vimwiki_global_ext = 0
 
 " For reference:
 " let g:vimwiki_list = [{'path': '~/mywiki/', 'path_html': '~/mywiki_html'}]
+"
 
 " Start pathogen package manager
-execute pathogen#infect()
+"execute pathogen#infect()
 
 " Use mouse normally
 set mouse=a
@@ -102,7 +103,6 @@ nmap <C-p> <Plug>MarkdownPreview
 """"""""""""""""""""
 "      COLORS      "
 """"""""""""""""""""
-
 " Line number
 "hi LineNr ctermbg=16 ctermfg=3
 "
@@ -197,7 +197,7 @@ let g:ale_fixers = {
 """""""""""""""""""""
 " Using vim-plug
 call plug#begin()
-   Plug 'lervag/vimtex'
+   Plug 'lervag/vimtex', { 'tag': 'v2.15' }
    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
    Plug 'HakonHarnes/img-clip.nvim'
    Plug 'vimwiki/vimwiki'
