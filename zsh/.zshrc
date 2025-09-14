@@ -11,7 +11,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # If you come from bash you might have to change your $PATH.
-export PATH="$PATH:$HOME/bin:/usr/local/texlive/2025/bin/universal-darwin"
+if [[ "$(uname)" == "Darwin" ]]; then
+  # macOS setup
+  export PATH="$PATH:$HOME/bin:/usr/local/texlive/2025/bin/universal-darwin:/opt/homebrew/bin"
+elif [[ "$(uname)" == "Linux" ]]; then
+  # Linux setup
+  export PATH=$PATH:$HOME/bin:$HOME/.local/bin:/usr/local/texlive/2024basic/bin/universal-darwin
+fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -117,7 +123,10 @@ alias py3="python3"
 alias startSSH='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa'
 alias cpwd="pwd | tr -d '\n' | copy"
 alias arduino="~/.local/share/applications/arduino-ide_2.1.1_Linux_64bit.AppImage"
-alias skim="open -a Skim"
+
+if [[ "$(uname)" == "Darwin" ]]; then
+  alias skim="open -a Skim"
+fi
 
 # Editing configs
 alias configvim="vi ~/.config/nvim/init.vim"
@@ -151,7 +160,6 @@ alias dbar="cd ~/Work/duke-list/2-Projects/Deep-Dbar"
 alias vim="nvim"
 alias vi="nvim"
 
-
 # DCC alias
 [ "$TERM" = "xterm-kitty" ] && alias dcc="kitty +kitten ssh jt430@dcc-login.oit.duke.edu -t bash"
 
@@ -171,18 +179,35 @@ wiki () {
     fi
 }
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-        . "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/homebrew/Caskroom/miniconda/base/bin:$PATH"
-    fi
+# conda set up per OS
+if [[ "$(uname)" == "Darwin" ]]; then
+  # >>> conda initialize >>>
+  # !! Contents within this block are managed by 'conda init' !!
+  __conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+  if [ $? -eq 0 ]; then
+      eval "$__conda_setup"
+  else
+      if [ -f "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+          . "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+      else
+          export PATH="/opt/homebrew/Caskroom/miniconda/base/bin:$PATH"
+      fi
+  fi
+  unset __conda_setup
+  # <<< conda initialize <<<
+elif [[ "$(uname)" == "Linux" ]]; then
+  # >>> conda initialize >>>
+  # !! Contents within this block are managed by 'conda init' !!
+  __conda_setup="$('/home/jesentanadi/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+  if [ $? -eq 0 ]; then
+      eval "$__conda_setup"
+  else
+      if [ -f "/home/jesentanadi/miniconda3/etc/profile.d/conda.sh" ]; then
+          . "/home/jesentanadi/miniconda3/etc/profile.d/conda.sh"
+      else
+          export PATH="/home/jesentanadi/miniconda3/bin:$PATH"
+      fi
+  fi
+  unset __conda_setup
+  # <<< conda initialize <<<
 fi
-unset __conda_setup
-# <<< conda initialize <<<
-
