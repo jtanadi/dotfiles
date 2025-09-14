@@ -203,4 +203,5 @@ call plug#begin()
    Plug 'vimwiki/vimwiki'
    Plug 'tpope/vim-surround'
    Plug 'tpope/vim-commentary'
+   Plug 'preservim/nerdtree'
 call plug#end()
