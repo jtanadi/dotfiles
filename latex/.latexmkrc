@@ -1,8 +1,11 @@
-if ($os eq 'darwin') {
+$pdf_mode = 1;
+
+print "Latexmk running on $^O\n";
+
+if ($^O eq 'darwin') {
   # MacOS settings
-  $pdf_previewer = 'open -a Skim';
-  $pdf_mode = 4;
-} elsif ($os eq 'linux') {
+  $pdf_previewer = 'open -a Skim %S'; # %S = PDF filename
+} elsif ($^O eq 'linux') {
   # Linux settings
   $pdf_previewer = "zathura %S";
 } else {
