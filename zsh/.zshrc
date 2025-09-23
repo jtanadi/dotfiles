@@ -21,6 +21,7 @@ fi
 
 # ROS2 (Jazzy) stuff for Linux
 if [[ "$(uname)" == "Linux" ]]; then
+  echo "Sourcing ROS2 Jazzy Jalisco environment"
   echo "source /opt/ros/jazzy/setup.zsh"
 fi
 
