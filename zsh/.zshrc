@@ -21,7 +21,6 @@ fi
 
 # ROS2 (Jazzy) stuff for Linux
 if [[ "$(uname)" == "Linux" ]]; then
-  echo "Sourcing ROS2 Jazzy Jalisco environment and setting domain ID..."
   source /opt/ros/jazzy/setup.zsh
   export ROS_DOMAIN_ID=69
 fi
