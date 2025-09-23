@@ -19,6 +19,11 @@ elif [[ "$(uname)" == "Linux" ]]; then
   export PATH=$PATH:$HOME/bin:$HOME/.local/bin
 fi
 
+# ROS2 (Jazzy) stuff for Linux
+if [[ "$(uname)" == "Linux" ]]; then
+  echo "source /opt/ros/jazzy/setup.zsh"
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
