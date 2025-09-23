@@ -16,7 +16,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
   export PATH="$PATH:$HOME/bin:/usr/local/texlive/2025/bin/universal-darwin:/opt/homebrew/bin"
 elif [[ "$(uname)" == "Linux" ]]; then
   # Linux setup
-  export PATH=$PATH:$HOME/bin:$HOME/.local/bin:/usr/local/texlive/2024basic/bin/universal-darwin
+  export PATH=$PATH:$HOME/bin:$HOME/.local/bin
 fi
 
 # Path to your oh-my-zsh installation.
