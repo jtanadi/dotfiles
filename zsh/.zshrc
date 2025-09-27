@@ -13,7 +13,7 @@ export NVM_DIR="$HOME/.nvm"
 # If you come from bash you might have to change your $PATH.
 if [[ "$(uname)" == "Darwin" ]]; then
   # macOS setup
-  export PATH="$PATH:$HOME/bin:/usr/local/texlive/2025/bin/universal-darwin:/opt/homebrew/bin:/usr/share/code/bin"
+  export PATH="$PATH:$HOME/bin:/usr/local/texlive/2025/bin/universal-darwin:/opt/homebrew/bin:/usr/local/bin"
 elif [[ "$(uname)" == "Linux" ]]; then
   # Linux setup
   export PATH=$PATH:$HOME/bin:$HOME/.local/bin
