@@ -13,10 +13,6 @@ let g:vimwiki_global_ext = 0
 
 " For reference:
 " let g:vimwiki_list = [{'path': '~/mywiki/', 'path_html': '~/mywiki_html'}]
-"
-
-" Start pathogen package manager
-"execute pathogen#infect()
 
 " Use mouse normally
 set mouse=a
