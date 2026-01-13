@@ -152,7 +152,7 @@ alias cv="cd ~/Work/CV/"
 # Change dir aliases (Duke)
 alias lab="cd ~/Work/duke-list"
 alias list="cd ~/Work/duke-list"
-alias duke="cd ~/Work/duke-courses/Fall2025"
+alias duke="cd ~/Work/duke-courses/Spring2026"
 alias phd="cd ~/Work/phdWiki"
 alias box="cd '/Users/jesentanadi/Library/CloudStorage/Box-Box/TEAM 3853-5479: DUKE-LIST-PRIVATE/00-individual/Tanadi'"
 
